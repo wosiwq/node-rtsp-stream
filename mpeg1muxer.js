@@ -30,7 +30,9 @@ Mpeg1Muxer = function(options) {
     '-f',
     'mpegts',
     '-codec:v',
-    'mpeg1video',
+    'copy',
+    '-codec:a',
+    'copy',
     // additional ffmpeg options go here
     ...this.additionalFlags,
     '-'
