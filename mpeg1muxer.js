@@ -21,6 +21,8 @@ Mpeg1Muxer = function(options) {
     }
   }
   this.spawnOptions = [
+    "-hwaccel",
+    "auto",
     "-rtsp_transport",
     "tcp",
     "-i",
